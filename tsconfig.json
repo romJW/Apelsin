@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "esnext",
+        "jsx": "react-jsx",
+        "noEmit": false,
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "outDir": "dist",
+        "allowUnusedLabels": false,
+        "allowSyntheticDefaultImports": true,
+        "noImplicitReturns": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "lib": ["es7", "DOM"],
+        "pretty": true,
+        "typeRoots": ["node_modules/@types"],
+        "baseUrl": ".",
+        "paths": {
+            "@api/*": ["src/api/*"],
+            "@assets/*": ["src/assets/*"],
+            "@classes/*": ["src/classes/*"],
+            "@components/*": ["src/components/*"],
+            "@constants/*": ["src/constants/*"],
+            "@enums/*": ["src/enums/*"],
+            "types/*": ["src/types/*"],
+            "@atoms/*": ["src/ui/atoms/*"],
+            "@molecules/*": ["src/ui/molecules/*"],
+            "@organisms/*": ["src/ui/organisms/*"],
+            "@pages/*": ["src/ui/pages/*"],
+            "@utils/*": ["src/utils/*"],
+            "@store/*": ["src/store/*"]
+        }
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS",
+            "target": "es5",
+            "esModuleInterop": true
+        },
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"],
+    "compileOnSave": false,
+    "buildOnSave": false
+}
