@@ -1,0 +1,65 @@
+@import '/src/styles/_colors.scss';
+
+.card {
+    display: flex;
+    gap: 20px;
+    background-color: $lightOrange;
+
+    &_vertical {
+        flex-direction: column;
+    }
+
+    &__info {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+        min-height: 120px;
+        max-width: 120px;
+
+        &_vertical {
+            max-width: 100%;
+        }
+    }
+
+    &__name {
+        font-size: 16px;
+    }
+
+    &__quantity {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        z-index: 1;
+        color: #a151d0;
+        background-color: $lightOrange;
+    }
+
+    &__price-container {
+        margin-top: auto;
+        margin-left: auto;
+    }
+
+    &__price {
+        font-size: 22px;
+        color: $price;
+        font-weight: bold;
+    }
+
+    &__select-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    &__controls {
+        display: flex;
+        max-width: 130px;
+    }
+}
