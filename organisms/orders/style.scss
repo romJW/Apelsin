@@ -1,0 +1,69 @@
+.btn-delete {
+    width: 14px;
+    height: 14px;
+    padding: 6px;
+    background: red;
+    border-radius: 50%;
+}
+
+// for orderCreate client block
+.create__client-block {
+    align-content: center;
+    align-items: center;
+    background-color: #ff9100;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+// for tables
+.service-block {
+    margin: 20px 0px;
+}
+
+.worker-card {
+    .card-body {
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px #767676d9;
+        padding-top: 10px;
+        margin-left: 0!important;
+        padding-bottom: 10px;
+        .ant-col {
+            padding: 0 10px;
+            margin: 0!important;
+        }
+        .text-date {
+            color: #939c9e;
+            font-size: 14px;
+        }
+        .text-status {
+            text-align: end;
+
+            &.text-blue {
+                color: blue;
+            }
+            &.text-green {
+                color: green;
+            }
+        }
+        .text-name {
+            color: #939c9e;
+            font-size: 16px;
+        }
+        .icon-text-green {
+            color: green;
+        }
+        .icon-text-red {
+            color: red;
+        }
+        .icon-text-darkblue {
+            color: darkblue;
+        }
+    }
+}
